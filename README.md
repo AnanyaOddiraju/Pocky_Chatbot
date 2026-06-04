@@ -1,14 +1,15 @@
 ---
-title: Streamlit Template Space
+title: Rag Chatbot Pocky
 emoji: 🚀
 colorFrom: red
 colorTo: red
 sdk: docker
 app_port: 8501
 tags:
-  - streamlit
+- streamlit
 pinned: false
-short_description: Streamlit template space
+short_description: Chatbot for Q/A from docs using RAG, Multi agents
+license: mit
 ---
 
 # Welcome to Streamlit!
