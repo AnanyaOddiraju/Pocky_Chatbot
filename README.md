@@ -50,10 +50,10 @@ After set up is done, sequence for everyday routine,
 
 What i did 
 - python -m venv.venv
-- .\.venv\Scripts\activate
+- .\.venv\Scripts\activate or  .\.venv\Scripts\Activate.ps1 (recommended)
 - created project structure for pdf, docx, txt in mind (embeddings, chubking, pipeline etc fokders in src)
 - pip install -r requirements.txt 
 - Added loader, document_extractor, text_chunker, test_text_chunker
 - pytest -q -s tests/unit/test_text_chunker.py
-
+- 
 

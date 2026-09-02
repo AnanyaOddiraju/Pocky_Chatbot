@@ -17,6 +17,7 @@ def chunk_text(
             chunks.append(chunk.strip())
           start += chunk_size - chunk_overlap
      return chunks
+
 def chunk_document(
         document : dict,
         chunk_size : int =1000,

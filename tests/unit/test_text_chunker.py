@@ -20,3 +20,4 @@ def test_chunk_text():
 
     #combined = " ".join(c.strip() for c in chunks)
     #assert "sample text" in combined
+test_chunk_text()
