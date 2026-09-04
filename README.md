@@ -33,4 +33,5 @@ Process
 - Added loader, document_extractor, text_chunker, test_text_chunker
 - pytest -q -s tests/unit/test_text_chunker.py
 - python -m pytest -q -s path
+- conda deactivate
 

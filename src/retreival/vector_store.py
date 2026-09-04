@@ -16,3 +16,7 @@ class VectorStore:
     def add_chunk(self, chunk_id: int, vector: list[float], metadata: dict):
         point = PointStruct(id=chunk_id, vector=vector, payload=metadata)
         self.client.upsert(collection_name=self.collection_name, points=[point])
+    def search(self,query_embedding:list[float],limit: int =3):
+        results = self.client.query_points(collection_name=self.collection_name, query=query_embedding, limit=limit, with_payload=True)
+        return results.points
+    
