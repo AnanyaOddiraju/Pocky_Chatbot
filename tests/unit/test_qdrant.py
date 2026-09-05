@@ -21,7 +21,7 @@ def test_search_vector_store():
     embedder = TextEmbedder()
     store = VectorStore()
 
-    user_query = "What's the example sentence?"
+    user_query = "Tell me about first domesticated animals"
     query_embedding = embedder.embed_text(user_query)
     result_text= store.search(query_embedding=query_embedding, limit=3)
     for result in result_text:

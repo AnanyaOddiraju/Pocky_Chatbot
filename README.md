@@ -34,4 +34,5 @@ Process
 - pytest -q -s tests/unit/test_text_chunker.py
 - python -m pytest -q -s path
 - conda deactivate
+- .\.venv\Scripts\python.exe -m pip install -U google-genai # to download new packages
 

@@ -8,7 +8,7 @@ class TextEmbedder:
         embedding = self.model.encode(text) #creating embedding for particular chunk
         return embedding.tolist()  # Convert numpy array to list for JSON serialization
 
-    def embed_documents(self, texts: list[str]) -> list[list[float]]:
+    def embed_document(self, texts: list[str]) -> list[list[float]]:
         embeddings = self.model.encode(texts) #creating embedding for set of chunks at once
         return embeddings.tolist()  # Convert numpy array to list for JSON serialization
         #return [embedding.tolist() for embedding in embeddings]  # Convert numpy array to list for JSON serialization
